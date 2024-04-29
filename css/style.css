@@ -199,7 +199,6 @@ figure.effect-oscar:hover p {
     -webkit-transform: scale(1);
     transform: scale(1);
     color: #ffffff;
-    +++++++
 }
 
 figure.effect-oscar:hover figcaption {
@@ -326,11 +325,10 @@ p {
 .navStyle ul li {
     display: inline-block;
     margin: 0 5px;
-    float: initial;
 }
 
 .navStyle ul li:first-child {
-    /*margin:0px;*/
+    margin: 0px;
     ;
 }
 
@@ -542,8 +540,6 @@ a.read_more:hover {
     padding: 110px 0;
 }
 
-.timeline h2 {}
-
 
 /* Services
 ---------------------------------*/
@@ -554,15 +550,11 @@ a.read_more:hover {
     border: 1px dashed #cfcfcf;
 }
 
-#scholarships h2 {
-    /* color: #fff; */
-}
 
 .service_wrapper {
     padding: 40px 0 0px;
 }
 
-.service_section {}
 
 .service_block {
     text-align: center;
@@ -616,9 +608,6 @@ a.read_more:hover {
     margin: 35px 0 15px;
 }
 
-#scholarships h6 {
-    /* color:#fff; */
-}
 
 .service_block p {
     font-size: 14px;
@@ -660,7 +649,7 @@ a.read_more:hover {
 }
 
 .service-list-col1 i {
-    display: ;
+    display: block;
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -1560,7 +1549,7 @@ img {
 }
 
 #portfolio_wrapper .one-four {
-    margin: 0!important;
+    margin: 0 !important;
     line-height: 0;
     width: 25%;
     padding: 0;
@@ -1837,7 +1826,7 @@ img {
 }
 
 .project-section-title h1 {
-    margin-bottom: 5px!important;
+    margin-bottom: 5px !important;
     letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
 }
@@ -2007,7 +1996,7 @@ div.mc-image {
     bottom: 40px;
     padding: 10px 20px;
     text-indent: 0px;
-    moz-border-radius: 0px;
+    border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
     z-index: 1000;
@@ -2184,11 +2173,6 @@ div.mc-image {
     color: #777;
     font-size: 12px;
     line-height: 22px;
-}
-
-img {
-    /* min-height: 40px; */
-    /* max-height: 40px; */
 }
 
 .message-item:last-child:before {
@@ -2503,95 +2487,116 @@ img {
         width: auto;
         text-align: center;
     }
+
     .aboutUs-container {
         background-image: none;
     }
+
     p {
         font-size: 14px;
     }
-    .top_cont_outer {
-        /* height: 420px; */
-    }
+
+
     .hero_section {
         position: relative;
         padding-top: 10px;
     }
+
     .top_left_cont {
         padding: 38px 0;
     }
+
     .top_left_cont h2 {
         font-size: 25px;
         /* color: #FFF; */
         line-height: 39px;
         margin: 0 0 9px 0;
     }
+
     .inner_section {
         padding: 20px 0 20px;
     }
+
     #aboutUs img {
         margin-bottom: 20px;
     }
+
     #aboutUs h3 {
         font-size: 26px;
         line-height: 22px;
     }
+
     .service_block h3 {
         font-size: 16px;
     }
+
     service_block p {
         font-size: 14px;
         margin: 0px;
         margin-bottom: 20px;
     }
+
     #filters ul {
         padding-left: 0px;
     }
+
     .form {
         margin: 0 18px;
     }
+
     .page_section.team {
         padding: 40px 0;
     }
-    ,
+
     #clients {
         padding: 40px 0;
     }
+
     .client_logos ul li {
         display: inline;
         margin: 0 25px;
         padding: 11px 0;
         display: inline-block;
     }
-    .social_links li {}
+
+    /* Remove empty ruleset */
     .contact_section {
         margin: 0;
     }
+
     h2,
     .contact_section h2 {
         font-size: 30px;
     }
+
     .page_section.contact {
         padding: 60px 0 50px;
     }
+
     .navbar-inverse .navbar-toggle .icon-bar {
         background: #ffffff;
     }
+
     .navbar-inverse .navbar-toggle {
         border-color: transparent;
     }
+
     .navbar-inverse .navbar-toggle:hover,
     .navbar-inverse .navbar-toggle:focus {
         background: none;
         outline: none;
     }
+
     .navStyle ul li {
         display: block;
     }
+
     .navStyle {
         float: right;
         width: 100%;
         text-align: center;
     }
+
     .navbar {
         border: 0px solid #fff;
         min-height: 40px;
@@ -2599,51 +2604,58 @@ img {
         float: right;
         width: 100%;
     }
+
     .navStyle ul li {
         display: block;
         margin: 0px;
     }
+
     .navStyle ul li:last-child {
         margin: 0px;
     }
+
     .navbar-inverse .navbar-nav>li>a {
         /* color: #222; */
         font-size: 12px;
         padding: 10px 11px;
     }
 
-@media (max-width: 480px) {
-    .navStyle {
-        float: left;
-        width: 100%;
+    @media (max-width: 480px) {
+        .navStyle {
+            float: left;
+            width: 100%;
+            text-align: left;
+        }
+
+        .navbar {
+            border: 0px solid #fff;
+            min-height: 40px;
+            margin-bottom: 0px;
+            float: initial;
+            width: 100%;
+        }
+
+        .team_area {
+            width: 99%;
+        }
+
+        .read_more2 {
+            display: none;
+        }
+    }
+
+    .rt-box {
+        /* float: left; */
+        /* width: 88%; */
         text-align: left;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        text-align: center;
     }
-    .navbar {
-        border: 0px solid #fff;
-        min-height: 40px;
-        margin-bottom: 0px;
-        float: initial;
-        width: 100%;
-    }
-    .team_area {
-        width: 99%;
-    }
-    .read_more2 {
-        display: none;
-    }
-}
 
-.rt-box {
-    /* float: left; */
-    /* width: 88%; */
-    text-align: left;
-    margin-left: 10px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-img.img.img-circle.lt-box {
-    /* float: left; */
-    width: 64px;
-    height: auto;
+    img.img.img-circle.lt-box {
+        /* float: left; */
+        width: 64px;
+        height: auto;
+    }
 }
